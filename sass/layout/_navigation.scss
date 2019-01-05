@@ -19,6 +19,11 @@
         z-index: 60;
         text-align: center;
         cursor: pointer;
+
+        @include respond(phone) {
+            top: 2em;
+            right: 2em;
+        }
     }
 
     &__background {
@@ -57,7 +62,7 @@
 
         @include respond(phone) {
             position: relative;
-            left: 20%;
+            left: 10%;
         }
     }
 
