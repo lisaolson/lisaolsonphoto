@@ -1,0 +1,13 @@
+.footer {
+    height: 10rem;
+    background-color: $color-charcoal;
+    
+    p {
+        color: $color-primary;
+        text-align: center;
+        font-size: 2em;
+        margin-top: 3.5em;
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
+    }
+}

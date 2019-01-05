@@ -1,1 +1,63 @@
 // All sections of home page
+
+.logo {
+
+    p {
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 3em;
+        position: fixed;
+        top: 0;
+        left: 0;
+        color: #F7F4F4;
+        z-index: 10;
+        margin: 7.5rem;
+    }
+}
+
+
+// font-family: 'Charm', cursive;
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Open Sans Condensed', sans-serif;
+// font-family: 'Nanum Gothic', sans-serif;
+// font-family: 'Quicksand', sans-serif;
+// font-family: 'Major Mono Display', monospace;
+// font-family: 'Sacramento', cursive;
+// font-family: 'Homemade Apple', cursive;
+// font-family: 'Reenie Beanie', cursive;
+// font-family: 'Herr Von Muellerhoff', cursive;
+// font-family: 'Mr De Haviland', cursive;
+// font-family: 'Zeyada', cursive;
+// font-family: 'Dawning of a New Day', cursive;
+// font-family: 'Stalemate', cursive;
+
+.photo1 {
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    width: 100%;
+}
+
+.photos img {
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    width: 100%;
+}
+
+span.quote p {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2.4em;
+    position: absolute;
+    color: #F7F4F4;
+    bottom: 10rem;
+    right: 14rem;
+}
+
+span.quote2 p {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2.4em;
+    position: absolute;
+    color: #F7F4F4;
+    bottom: 7rem;
+    right: 12rem;
+}

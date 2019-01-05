@@ -1,0 +1,10 @@
+.header {
+    h1.welcome {
+        text-transform: uppercase;
+        color: $color-primary;
+        font-size: 15em;
+        transform: rotate(-30deg);
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 100;
+    }
+}

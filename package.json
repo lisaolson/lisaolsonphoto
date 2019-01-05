@@ -18,5 +18,8 @@
   "homepage": "https://github.com/lisaolson/lisaolsonphoto#readme",
   "devDependencies": {
     "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1"
   }
 }

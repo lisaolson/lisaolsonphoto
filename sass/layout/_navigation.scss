@@ -1,4 +1,10 @@
 .navigation {
+    position: absolute;
+
+    @include respond(phone) {
+        position: relative;
+    }
+
     &__checkbox {
         display: none;
     }
@@ -16,10 +22,9 @@
     }
 
     &__background {
-        height: 6rem;
-        width: 6rem;
+        height: 2rem;
+        width: 2rem;
         border-radius: 50%;
-        position: fixed;
         top: 6.5rem;
         right: 6.5rem;
         background-image: radial-gradient($color-charcoal, $color-charcoal);
@@ -44,11 +49,16 @@
         // center inside of page
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 75%;
         transform: translate(-50%, -50%);
         list-style: none;
         text-align: center;
         width: 100%;
+
+        @include respond(phone) {
+            position: relative;
+            left: 20%;
+        }
     }
 
     &__item {
