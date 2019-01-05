@@ -11,6 +11,10 @@
         color: #F7F4F4;
         z-index: 10;
         margin: 7.5rem;
+
+        @include respond(phone) {
+            margin: 4rem;
+        }
     }
 }
 
