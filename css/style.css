@@ -28,8 +28,9 @@ body {
     color: #F7F4F4;
     text-align: center;
     font-size: 2em;
-    margin-top: 3em;
-    font-family: 'Quicksand', sans-serif; }
+    margin-top: 3.5em;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase; }
 
 .header h1.welcome {
   text-transform: uppercase;
@@ -56,6 +57,10 @@ body {
     z-index: 60;
     text-align: center;
     cursor: pointer; }
+    @media (max-width: 37.5em) {
+      .navigation__button {
+        top: 2em;
+        right: 2em; } }
   .navigation__background {
     height: 2rem;
     width: 2rem;
@@ -85,7 +90,7 @@ body {
     @media (max-width: 37.5em) {
       .navigation__list {
         position: relative;
-        left: 20%; } }
+        left: 10%; } }
   .navigation__item {
     margin: 1rem;
     color: #F7F4F4; }
@@ -142,6 +147,9 @@ body {
   color: #F7F4F4;
   z-index: 10;
   margin: 7.5rem; }
+  @media (max-width: 37.5em) {
+    .logo p {
+      margin: 4rem; } }
 
 .photo1 {
   background-size: cover;
