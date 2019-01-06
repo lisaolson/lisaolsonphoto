@@ -3,9 +3,10 @@
 .logo {
 
     p {
-        font-family: 'Reenie Beanie', cursive;
+        font-family: 'Quicksand', sans-serif;
         font-size: 3em;
         position: fixed;
+        font-weight: 100;
         top: 0;
         left: 0;
         color: #F7F4F4;
@@ -34,7 +35,7 @@
 // font-family: 'Dawning of a New Day', cursive;
 // font-family: 'Stalemate', cursive;
 
-.photo1 {
+.photo_cover {
     background-size: cover;
     background-position: top;
     position: relative;
@@ -42,10 +43,21 @@
 }
 
 .photos img {
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    width: 100%;
+    // background-size: cover;
+    // background-position: top;
+    // position: relative;
+    // width: 100%;
+}
+
+.firstset {
+    margin: 5rem 15rem;
+    background: $color-primary;
+    height: 80rem;
+
+    @include respond(tab-port) {
+        height: 70rem;
+        margin: 0;
+    }
 }
 
 span.quote p {
@@ -53,15 +65,231 @@ span.quote p {
     font-size: 2.4em;
     position: absolute;
     color: #F7F4F4;
-    bottom: 10rem;
-    right: 14rem;
 }
 
-span.quote2 p {
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 2.4em;
-    position: absolute;
-    color: #F7F4F4;
-    bottom: 7rem;
-    right: 12rem;
+span.quote1 p {
+    bottom: 10rem;
+    right: 14rem;
+
+    @include respond(tab-port) {
+        bottom: 50rem;
+        left: 4rem;
+    }
+    @include respond(phone) {
+        top: 24rem;
+        left: 4rem;
+    }
+}
+
+span.tsquote p {
+    color: $color-charcoal;
+    top: 2em;
+}
+
+.second_set img {
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    width: 100%;
+}
+
+.third_set img {
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    width: 100%;
+}
+
+.rose_set {
+    height: 80rem;
+    margin: 3rem 10rem;
+
+    @include respond(tab-port) {
+        height: 50rem;
+        margin: 2rem;
+        bottom: 50rem;
+        left: 4rem;
+    }
+    @include respond(phone) {
+        height: 30rem;
+        margin: 2rem;
+        top: 24rem;
+        left: 4rem;
+    }
+
+    img {
+        background-size: cover;
+        background-position: top;
+        width: 50%;
+    }
+
+    .rose {
+        position: absolute;
+        width: 25%;
+    }
+}
+
+.filter1 {
+    margin-top: 20%;
+
+    @include respond(tab-land) {
+        display: none;
+    }
+
+    @include respond(tab-port) {
+        display: none;
+    }
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+.filter2 {
+    right: 60rem;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    margin-top: 5%;
+}
+
+.filter3 {
+    right: 50rem;
+    -webkit-filter: contrast(200%);
+    filter: contrast(200%);
+    margin-top: 10%;
+}
+
+.filter4 {
+    right: 40rem;
+    -webkit-filter: drop-shadow(8px 8px 10px gray);
+    filter: drop-shadow(8px 8px 10px gray);
+    margin-top: 15%;
+}
+
+.filter5 {
+    right: 30rem;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin-top: 20%;
+}
+
+.filter6 {
+    right: 20rem;
+    -webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);
+    margin-top: 25%;
+}
+
+.filter7 {
+    right: 10rem;
+    -webkit-filter: saturate(8);
+    filter: saturate(8);
+    margin-top: 30%;
+}
+
+.filter8 {
+    right: 1rem;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    margin-top: 35%;
+}
+
+.daisy img {
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    width: 100%;
+}
+
+.three_mix {
+    height: 90rem;
+
+    @include respond(tab-port) {
+        height: 200rem;
+    }
+    @include respond(phone) {
+        height: 200rem;
+    }
+
+    img {
+        position: relative;
+        width: 40rem;
+    }
+
+    .row {
+        position: absolute;
+
+        @include respond(tab-port) {
+            position: relative;
+        }
+        @include respond(phone) {
+            position: relative;
+        }
+    }
+
+    .row1 {
+        right: 5em;
+    }
+
+    .row2 {
+        left: 0;
+        margin-top: 16%;
+    }
+
+    .row3 {
+        right: 10em;
+        margin-top: 30%;
+    }
+}
+
+.melflower {
+    height: 55rem;
+
+    @include respond(tab-port) {
+        margin-left: 50%;
+    }
+    img {
+        width: 30%;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+}
+
+.melflower1 {
+    width: 30%;
+}
+
+.peacockopen {
+    img {
+        width: 50%;
+    }
+
+    .open1 {
+        float: right;
+    }
+}
+
+.mel {
+    height: 50rem;
+}
+.tilt {
+    transform: rotate(90deg);
+    position: relative;
+    width: 30%;
+    margin-left: 2rem;
+}
+
+.mel1 {
+    margin-top: 10rem;
+}
+
+.london {
+    transform: rotate(180deg);
+    width: 60%;
+    padding: 3%;
 }
