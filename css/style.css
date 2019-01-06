@@ -21,6 +21,69 @@ body {
   font-weight: 400;
   line-height: 1.7rem; }
 
+.composition {
+  position: relative;
+  margin: 5rem; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rba(#111111, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        position: relative; } }
+    .composition__photo--p1 {
+      left: -5rem;
+      top: 20rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p1 {
+          top: 0;
+          transform: scale(1); } }
+    .composition__photo--p2 {
+      right: 5em;
+      top: 27rem; }
+      @media (max-width: 75em) {
+        .composition__photo--p2 {
+          top: 40em;
+          right: 0; } }
+      @media (max-width: 56.25em) {
+        .composition__photo--p2 {
+          right: 0;
+          width: 100%;
+          bottom: 0; } }
+      @media (max-width: 37.5em) {
+        .composition__photo--p2 {
+          right: 0;
+          width: 100%;
+          bottom: 0; } }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem;
+      width: 50rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p3 {
+          top: 0;
+          left: 0;
+          transform: scale(1); } }
+    .composition__photo--p4 {
+      left: 20%;
+      top: 10rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p4 {
+          top: 0;
+          left: 0;
+          transform: scale(1); } }
+    .composition__photo:hover {
+      outline: 1.5rem solid #111111;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rba(#111111, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .footer {
   height: 10rem;
   background-color: #111111; }
@@ -139,9 +202,10 @@ body {
     transform: rotate(-135deg); }
 
 .logo p {
-  font-family: 'Reenie Beanie', cursive;
+  font-family: 'Quicksand', sans-serif;
   font-size: 3em;
   position: fixed;
+  font-weight: 100;
   top: 0;
   left: 0;
   color: #F7F4F4;
@@ -151,30 +215,202 @@ body {
     .logo p {
       margin: 4rem; } }
 
-.photo1 {
+.photo_cover {
   background-size: cover;
   background-position: top;
   position: relative;
   width: 100%; }
 
-.photos img {
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  width: 100%; }
+.firstset {
+  margin: 5rem 15rem;
+  background: #F7F4F4;
+  height: 80rem; }
+  @media (max-width: 56.25em) {
+    .firstset {
+      height: 70rem;
+      margin: 0; } }
 
 span.quote p {
   font-family: 'Reenie Beanie', cursive;
   font-size: 2.4em;
   position: absolute;
-  color: #F7F4F4;
+  color: #F7F4F4; }
+
+span.quote1 p {
   bottom: 10rem;
   right: 14rem; }
+  @media (max-width: 56.25em) {
+    span.quote1 p {
+      bottom: 50rem;
+      left: 4rem; } }
+  @media (max-width: 37.5em) {
+    span.quote1 p {
+      top: 24rem;
+      left: 4rem; } }
 
-span.quote2 p {
-  font-family: 'Reenie Beanie', cursive;
-  font-size: 2.4em;
-  position: absolute;
-  color: #F7F4F4;
-  bottom: 7rem;
-  right: 12rem; }
+span.tsquote p {
+  color: #111111;
+  top: 2em; }
+
+.second_set img {
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  width: 100%; }
+
+.third_set img {
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  width: 100%; }
+
+.rose_set {
+  height: 80rem;
+  margin: 3rem 10rem; }
+  @media (max-width: 56.25em) {
+    .rose_set {
+      height: 50rem;
+      margin: 2rem;
+      bottom: 50rem;
+      left: 4rem; } }
+  @media (max-width: 37.5em) {
+    .rose_set {
+      height: 30rem;
+      margin: 2rem;
+      top: 24rem;
+      left: 4rem; } }
+  .rose_set img {
+    background-size: cover;
+    background-position: top;
+    width: 50%; }
+  .rose_set .rose {
+    position: absolute;
+    width: 25%; }
+
+.filter1 {
+  margin-top: 20%; }
+  @media (max-width: 75em) {
+    .filter1 {
+      display: none; } }
+  @media (max-width: 56.25em) {
+    .filter1 {
+      display: none; } }
+  @media (max-width: 37.5em) {
+    .filter1 {
+      display: none; } }
+
+.filter2 {
+  right: 60rem;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  margin-top: 5%; }
+
+.filter3 {
+  right: 50rem;
+  -webkit-filter: contrast(200%);
+  filter: contrast(200%);
+  margin-top: 10%; }
+
+.filter4 {
+  right: 40rem;
+  -webkit-filter: drop-shadow(8px 8px 10px gray);
+  filter: drop-shadow(8px 8px 10px gray);
+  margin-top: 15%; }
+
+.filter5 {
+  right: 30rem;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  margin-top: 20%; }
+
+.filter6 {
+  right: 20rem;
+  -webkit-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
+  margin-top: 25%; }
+
+.filter7 {
+  right: 10rem;
+  -webkit-filter: saturate(8);
+  filter: saturate(8);
+  margin-top: 30%; }
+
+.filter8 {
+  right: 1rem;
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+  margin-top: 35%; }
+
+.daisy img {
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  width: 100%; }
+
+.three_mix {
+  height: 90rem; }
+  @media (max-width: 56.25em) {
+    .three_mix {
+      height: 200rem; } }
+  @media (max-width: 37.5em) {
+    .three_mix {
+      height: 200rem; } }
+  .three_mix img {
+    position: relative;
+    width: 40rem; }
+  .three_mix .row {
+    position: absolute; }
+    @media (max-width: 56.25em) {
+      .three_mix .row {
+        position: relative; } }
+    @media (max-width: 37.5em) {
+      .three_mix .row {
+        position: relative; } }
+  .three_mix .row1 {
+    right: 5em; }
+  .three_mix .row2 {
+    left: 0;
+    margin-top: 16%; }
+  .three_mix .row3 {
+    right: 10em;
+    margin-top: 30%; }
+
+.melflower {
+  height: 55rem; }
+  @media (max-width: 56.25em) {
+    .melflower {
+      margin-left: 50%; } }
+  .melflower img {
+    width: 30%; }
+    @media (max-width: 56.25em) {
+      .melflower img {
+        width: 100%; } }
+    @media (max-width: 37.5em) {
+      .melflower img {
+        width: 100%; } }
+
+.melflower1 {
+  width: 30%; }
+
+.peacockopen img {
+  width: 50%; }
+
+.peacockopen .open1 {
+  float: right; }
+
+.mel {
+  height: 50rem; }
+
+.tilt {
+  transform: rotate(90deg);
+  position: relative;
+  width: 30%;
+  margin-left: 2rem; }
+
+.mel1 {
+  margin-top: 10rem; }
+
+.london {
+  transform: rotate(180deg);
+  width: 60%;
+  padding: 3%; }
