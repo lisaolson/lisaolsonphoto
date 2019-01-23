@@ -1,13 +1,16 @@
 # Photography 
 This is my personal photography website.  All photos were taken by me and the site was put together in pure HTML and CSS.
 
-### Website
-www.lisaolson.info/lisaolsonphoto
+### Live
+Visit at http://lisaolson.info/lisaolsonphoto
 
-### Technolgies
+### Technology
+- Github Hosting
+- HTML5
+- SASS/SCSS
 - CSS Animations
-- SASS
-- HTML
+- FontAwesome Icons
+- Google Fonts
 
 #### Camera
 Fujifilm X100F
