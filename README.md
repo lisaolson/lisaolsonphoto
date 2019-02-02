@@ -19,5 +19,11 @@ Fujifilm X100F
 - Adobe Lightroom
 - Snapseed
 
+##### Images
+Below contains screenshots of the working live site.
+![Progress Bar Illustrations on whiteboard](img/lisaolsonphoto3.png)
+![Progress Bar Illustration](img/lisaolsonphoto2.png)
+![Progress Bar](img/lisaolsonphoto.png)
+
 #### Author
 Lisa Olson | @eunoia_lo
