@@ -20,7 +20,6 @@ Fujifilm X100F
 - Snapseed
 
 ##### Images
-Below contains screenshots of the live site.
 ![Progress Bar Illustrations on whiteboard](img/lisaolsonphoto3.png)
 
 #### Author
