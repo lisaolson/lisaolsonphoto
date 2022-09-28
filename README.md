@@ -2,7 +2,7 @@
 This is my personal photography website.  All photos were taken by me and the site was put together in pure HTML and CSS.
 
 ### Live
-Visit at http://lisaolson.info/lisaolsonphoto
+Visit at [http://lisaolson.info/lisaolsonphoto](https://lisaolson.dev/lisaolsonphoto/)
 
 ### Technology
 - Github Hosting
